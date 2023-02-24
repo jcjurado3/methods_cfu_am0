@@ -9,7 +9,7 @@ def greeting
     return "Hello! How are You?"
 end
 greeting1 = greeting
-greeting1 = greeting
+greeting2 = greeting
 
 p greeting1
 p greeting2
@@ -62,9 +62,21 @@ p "the square of #{num} is #{sq1}"
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
 
+def check_stock(num,item)
+    if num == 4 
+        puts "#{item} is stocked"
+    elsif num == 3
+        puts "#{item} - running LOW"
+    elsif num == 0
+        puts "#{item} OUT of stock"
+    elsif num == 1
+        puts    "#{item} - running LOW"
+    end
+    end
 
 check_stock(4, "Coffee");
 # => "Coffee is stocked"
+
 
 check_stock(3, "Tortillas");
 # => "Tortillas - running LOW"
