@@ -63,14 +63,14 @@ p "the square of #{num} is #{sq1}"
 
 
 def check_stock(num,item)
-    if num == 4 
-        puts "#{item} is stocked"
-    elsif num == 3
-        puts "#{item} - running LOW"
-    elsif num == 0
-        puts "#{item} OUT of stock"
-    elsif num == 1
-        puts    "#{item} - running LOW"
+    if num > 3 
+         "#{item} is stocked"
+    elsif num < 0
+         "#{item} - running LOW"
+    elsif 
+         "#{item} OUT of stock"
+    elsif 
+            "#{item} - running LOW"
     end
     end
 
